@@ -1,112 +1,70 @@
-# AI SDK - Cours UDEMY | Yann METIER
+# 🎓 Formation UDEMY AI SDK
 
-<img src="https://ibb.co/cS3z9NyD" alt="AI SDK Toolkit" />
+Bienvenue dans cette formation complète sur AI SDK, la bibliothèque TypeScript moderne pour créer des outils interactifs sur des modèles LLM.
 
-🚀 **Maîtrisez AI SDK avec cette course UDEMY** Ce dépôt contient tous les exemples de code et exercices de notre cours pratique axé sur AI SDK v5 - l'incroyable bibliothèque TypeScript devenant le standard pour le développement d'applications IA.
+## À propos
 
-Apprenez à construire des applications IA prêtes pour la production en utilisant les fonctionnalités puissantes d'AI SDK v5 et les modèles de développement modernes. Disponible sur [aihero.dev](https://aihero.dev).
+Ce répertoire gituh contient l'ensemble du matériel pédagogique de la formation UDEMY AI SDK : exercices, exemples et ressources pour apprendre à développer avec le tooltip développé par Vercel. Chaque module vous permet de progresser à votre rythme en pratiquant sur des cas concrets.
 
-## 🎯 Ce que vous allez maîtriser avec AI SDK v5
+**Objectif :** Vous rendre autonome dans la création d'applications IA robustes et scalables.
 
-Ce cours intensif vous fera passer des bases d'AI SDK v5 aux patterns de production avancés :
+## 📚 Programme détaillé
 
-- **Concepts de base d'AI SDK v5** - Comprendre la boîte à outils moderne de développement IA
-- **Streaming avec AI SDK v5** - Construire des expériences IA temps réel et réactives avec `streamText`
-- **Tool Calling & Function Calling** - Créer des applications IA capables d'utiliser des outils et API externes
-- **Message Parts & Data** - Travailler avec des composants de message structurés et données personnalisées
-- **Support multi-providers** - Basculer facilement entre OpenAI, Anthropic, Google, et plus
-- **Gestion de fichiers et images** - Traiter et travailler avec du contenu multimédia
-- **Patterns de mémoire avancés** - Gestion d'état sophistiquée et gestion de conversations
-- **Fonctionnalités production** - Tests intégrés, monitoring et capacités de déploiement
+### Fondamentaux
+Découvrez comment fonctionne l'IA, son architecture et ses concepts principaux.
 
-## 🚀 Démarrage rapide
+### Streaming & Réactivité
+Implémentez des réponses en temps réel avec du streaming. Créez des interfaces utilisateur fluides qui affichent progressivement les résultats de vos modèles.
 
-### Prérequis
+### Multi-providers
+Configurez et basculez entre différents fournisseurs (OpenAI, Anthropic, Google) sans réécrire votre code. Gérez les spécificités de chaque provider.
 
-- [Node.js](https://nodejs.org/en/download) (version 22 ou supérieure)
-- [pnpm](https://pnpm.io/) (recommandé) ou npm/yarn/bun
-- Clés API pour vos providers IA préférés :
-  - [OpenAI](https://platform.openai.com/api-keys) (GPT-4, GPT-3.5)
-  - [Anthropic](https://console.anthropic.com/) (Claude)
-  - [Google AI Studio](https://aistudio.google.com/apikey) (Gemini)
+### Tool Calling
+Donnez des capacités étendues à vos agents IA en les connectant à des APIs externes, bases de données ou services tiers via le function calling.
 
-### Installation
+### Gestion avancée
+Orchestrez la mémoire conversationnelle, gérez le contexte sur de longues sessions et optimisez les performances de vos agents.
 
-1. **Clonez ce dépôt :**
+### Data & Structures
+Travaillez avec des formats complexes : message parts, payload custom, métadonnées et structuration des échanges.
 
-```bash
-git clone https://github.com/ai-hero-dev/ai-sdk-v5-crash-course.git
-cd ai-sdk-v5-crash-course
-```
+### Multimédia
+Intégrez le traitement d'images, fichiers et autres assets dans vos workflows IA.
 
-2. **Installez les dépendances :**
+### Production
+Déployez vos applications avec monitoring, tests automatisés, observabilité et gestion d'erreurs professionnelle.
 
-```bash
-pnpm install
-```
 
-3. **Configurez votre environnement :**
+## ✅ Prérequis techniques
 
-```bash
-cp .env.example .env
-```
+Avant de démarrer, assurez-vous d'avoir :
 
-4. **Ajoutez vos clés API dans `.env`** et vous êtes prêt à apprendre !
+- **Node.js** v22 minimum ([télécharger](https://nodejs.org/en/download))
+- **TypeScript** v5+ ([télécharger](https://www.typescriptlang.org/))
+- **Package manager** : npm, pnpm, yarn ou bun
+- **Clé API** via [OpenRouter](https://openrouter.ai/) pour accéder aux LLMs (Claude, GPT, Gemini, Mistral...)
 
-## 📚 Structure du cours
+## 🚀 Démarrage
 
-Commencez par lancer `pnpm dev` :
+### Configuration initiale
+
+Récupérez le projet :
 
 ```bash
-pnpm dev
+git clone https://github.com/anonymze/tuto_ai_sdk.git
+cd tuto_ai_sdk
+npm install
 ```
 
-Cela vous permettra de choisir entre les différentes sections du cours.
+Configurez vos variables d'environnement :
 
-Vous pouvez aussi lancer `pnpm exercise <numéro-exercice>` pour sauter à un exercice spécifique.
-
-## 📁 Modules du cours AI SDK v5
-
-```
-exercises/
-├── 01-basics/                    # Fondamentaux AI SDK v5
-│   ├── 01.1-what-is-the-ai-sdk/
-│   ├── 01.2-choosing-a-model/
-│   ├── 01.3-stream-text-to-terminal/
-│   ├── 01.4-ui-message-streams/
-│   ├── 01.5-stream-text-to-ui/
-│   └── 01.6-system-prompts/
-├── 02-agents/                    # Tool calling & agents
-├── 03-advanced/                  # Patterns avancés
-└── 99-reference/                 # Matériel de référence
+```bash
+cp .env .env.local
+# Éditez .env.local et ajoutez votre clé API OpenRouter
 ```
 
-## 🛠️ Méthodologie d'apprentissage
+Lancez le mode développement :
 
-Chaque exercice suit cette structure d'apprentissage :
-
-### Dossier `problem/`
-
-- **Votre terrain de jeu** - Commencez ici !
-- Contient `readme.md` avec instructions détaillées
-- Fichiers de code avec commentaires `TODO` à implémenter
-
-### Dossier `solution/`
-
-- **Implémentation de référence** - Consultez quand vous êtes bloqué
-- Code complet et fonctionnel pour chaque exercice
-- Idéal pour comparer les approches et apprendre les bonnes pratiques
-
-### Dossier `explainer/`
-
-- **Approfondissements** - Explications et concepts additionnels
-- Guides détaillés des sujets complexes
-- Parfait pour renforcer votre compréhension
-
-## 🤝 Obtenir de l'aide
-
-1. **Consultez la solution** - Chaque exercice a une version complétée
-2. **Vérifiez votre configuration** - Assurez-vous que les clés API et dépendances sont correctes
-3. **Regardez le cours** - Explications complètes disponibles sur [aihero.dev](https://aihero.dev)
-
-Prêt à maîtriser AI SDK v5 et devenir expert en développement IA ? Commençons à construire le futur ! 🚀
+```bash
+npm dev
+```
