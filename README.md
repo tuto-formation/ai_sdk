@@ -1,4 +1,4 @@
-# 🎓 Formation AI SDK | UDEMY
+# 🎓 Formation AI SDK - UDEMY
 
 Bienvenue dans cette formation complète sur AI SDK, la bibliothèque TypeScript moderne pour créer des outils interactifs sur des modèles LLM.
 
