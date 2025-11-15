@@ -51,7 +51,7 @@ Avant de démarrer, assurez-vous d'avoir :
 Récupérez le projet :
 
 ```bash
-git clone https://github.com/anonymze/tuto_ai_sdk.git
+git clone https://github.com/tuto-formation/ai_sdk
 cd tuto_ai_sdk
 npm install
 ```
